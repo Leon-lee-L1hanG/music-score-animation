@@ -1,0 +1,32 @@
+{
+  "name": "music-score-film",
+  "version": "1.0.0",
+  "description": "Three-dimensional piano score animation",
+  "main": "index.js",
+  "scripts": {
+    "preview": "remotion studio src/index.tsx",
+    "render": "remotion render src/index.tsx ScoreFilm .cache/render-raw.mp4 --codec=h264 --crf=18 --audio-codec=aac --audio-bitrate=320k && node scripts/finalize.mjs && node scripts/verify-encode.mjs",
+    "prepare": "node scripts/prepare.mjs && node scripts/map-score.mjs && node scripts/audio.mjs",
+    "verify": "node scripts/verify.mjs && node scripts/verify-encode.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "@react-three/fiber": "9.8.0",
+    "@react-three/postprocessing": "3.1.2",
+    "@remotion/cli": "4.0.527",
+    "@remotion/media-utils": "4.0.527",
+    "@remotion/three": "4.0.527",
+    "@tonejs/midi": "2.0.28",
+    "@xmldom/xmldom": "0.9.12",
+    "postprocessing": "6.39.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.527",
+    "three": "0.186.0",
+    "verovio": "6.3.0"
+  },
+  "private": true
+}

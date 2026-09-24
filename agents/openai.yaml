@@ -1,0 +1,6 @@
+interface:
+  display_name: "音乐跳谱动画"
+  short_description: "只给歌名，自动找素材并制作三维跳谱视频，保留源码并清理检查图"
+  default_prompt: "使用 $music-score-animation 制作我指定歌曲的三维音乐跳谱动画，直接交付视频和源码。"
+policy:
+  allow_implicit_invocation: true

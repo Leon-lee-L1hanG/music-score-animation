@@ -1,0 +1,13 @@
+node_modules/
+.cache/
+output/
+.env
+.env.*
+!.env.example
+*.log
+*.mp4
+*.wav
+*.mp3
+*.zip
+.DS_Store
+Thumbs.db
